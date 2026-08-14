@@ -1,0 +1,15 @@
+image: hub.intra.mlamp.cn/public/node:20-slim
+
+stages:
+  - verify
+
+verify:
+  stage: verify
+  before_script:
+    - corepack enable
+    - corepack prepare pnpm@10.14.0 --activate
+  script:
+    - pnpm install --frozen-lockfile --ignore-scripts
+    - pnpm build
+    - pnpm typecheck
+    - pnpm test
