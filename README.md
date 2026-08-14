@@ -10,7 +10,7 @@
 
 Git-first memory navigation and bounded evidence tools for DeepSeek Harness.
 
-It provides the portable `evidence-memory-memory` skill plus two read-only tools:
+It provides the portable `evidence-memory` skill plus two read-only tools:
 
 - `dsh_memory_search`: keyword search in explicitly configured local roots.
 - `dsh_memory_audit`: Git cleanliness, untracked-file, and credential-path audit.
