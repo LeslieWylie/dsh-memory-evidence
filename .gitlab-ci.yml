@@ -1,4 +1,4 @@
-image: hub.intra.mlamp.cn/public/node:20-slim
+image: node:20-slim
 
 stages:
   - verify
